@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Send Emails like a Gun</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body ng-app="routerApp">
+  <div class="container-fluid" ngController="appCtrl">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1">
+
+        <h3 >Shoot Email...Like a Gun</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4">
+        Send an Email to Someone:
+        <button>View Directory of Recepients</button>
+      </div>
+      <div class="col-lg-4">
+        Add a Recepient:
+        <form class="center-block">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input ng-model="name" type="text" class="form-group" placeholder="Sarah">
+            <label for="name">Email</label>
+            <input ng-model="email" type="text" class="form-group" placeholder="Sarah@gmail.com">
+          </div>
+        <button class="btn btn-default" type="button" ng-click = "submitToPost()" >Submit</button>
+        </form>
+      </div>
+    </div>
+
+
+
+    </div>
+
+
+</body>
+
+<script src="app.js"></script>
+</html>
